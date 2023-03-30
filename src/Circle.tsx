@@ -4,11 +4,7 @@ interface CircleProps {
   bgColor: string;
 }
 
-interface ContainerProps {
-  bgColor: string;
-}
-
-const Container = styled.div<ContainerProps>`
+const Container = styled.div<CircleProps>`
   width: 5rem;
   height: 5rem;
   background-color: ${(props) => props.bgColor};
@@ -21,16 +17,4 @@ function Circle({ bgColor }: CircleProps) {
 }
 
 export default Circle;
-
-
-
-// interface 사용의 쉬운 예
-interface playerShape {
-  name: string;
-  age: number;
-}
-
-const introduce = (playerObj: playerShape) => `Hello ${playerObj.name} Your Name is ${playerObj.name}.`;
-
-introduce({name:"소운", age:29})
 
