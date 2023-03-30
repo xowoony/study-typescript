@@ -26,11 +26,11 @@ export default Circle;
 
 // interface 사용의 쉬운 예
 interface playerShape {
-  age: string;
   name: string;
+  age: number;
 }
 
 const introduce = (playerObj: playerShape) => `Hello ${playerObj.name} Your Name is ${playerObj.name}.`;
 
+introduce({name:"소운", age:29})
 
-// introduce function을 어디서든지 쓸 수 있게됨.
