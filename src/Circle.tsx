@@ -12,8 +12,8 @@ interface CircleProps {
 
 // styled-component
 const Container = styled.div<ContainerProps>`
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   background-color: ${(props) => props.bgColor};
   border-radius: 100px;
   border: 0.5rem solid ${(props) => props.borderColor};
