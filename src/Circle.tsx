@@ -2,7 +2,7 @@ import styled from "styled-components";
 // interface
 interface ContainerProps {
   bgColor: string; // CircleProps 상태랑 똑같이 만들어주어야 함.
-  borderColor?: string; // CircleProps 상태랑 똑같이 만들어주어야 함.
+  borderColor?: string; // CircleProps 상태랑 똑같이 만들어주어야 함
 }
 
 interface CircleProps {
