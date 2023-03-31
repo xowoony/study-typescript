@@ -22,16 +22,28 @@ const Container = styled.div<ContainerProps>`
 `;
 
 // Circle Props
+// function Circle({ bgColor, borderColor, text = "default text" }: CircleProps) {
+//   const[counter, setCounter] = useState(true);
+//   setCounter(false);
+//   return (
+//     <Container bgColor={bgColor} borderColor={borderColor ?? bgColor}>
+//       {text}
+//     </Container>
+//   );
+// }
+
+
+// (string 또는 boolean타입이 되길 원한다면)
 function Circle({ bgColor, borderColor, text = "default text" }: CircleProps) {
-  const[counter, setCounter] = useState(true);
-  setCounter(false);
+  const[value, setValue] = useState<string|boolean>(true);
+  setValue(false);
+  setValue(3);
+  setValue("ddd");
   return (
     <Container bgColor={bgColor} borderColor={borderColor ?? bgColor}>
       {text}
     </Container>
   );
 }
-
-
 
 export default Circle;
